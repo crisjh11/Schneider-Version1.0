@@ -1,0 +1,48 @@
+.fondoGal {
+
+    background: rgb(66,66,68);
+    background: linear-gradient(144deg, rgba(66,66,68,1) 0%, rgba(159,160,161,1) 50%, rgba(225,225,226,1) 96%);
+
+    h1 {
+        font-family: 'Fredoka One', cursive;
+        margin-top: 25px;
+        text-decoration: underline;
+        color: #e2e616d8;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+    }
+}
+
+#galeriaFotos {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+
+    .galeriaFotos__lista{
+        margin: 5px;
+
+        .galeriaFotos_img {
+            width: 400px;
+            height: 250px;
+        }
+
+        :hover {
+            transform: scale(1.08);
+            transition: all 500ms;
+        }
+    }
+}
+
+#galeriaVideos {
+   
+    @extend #galeriaFotos;
+
+    li{
+        margin: 5px;
+    }
+}

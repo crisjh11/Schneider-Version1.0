@@ -1,0 +1,275 @@
+@mixin h2cardPrin ($tamanio , $separacion , $margen){
+    
+    font-size: $tamanio;
+    padding-top: $separacion;
+    margin: $margen;
+
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    margin-top: 0.75em !important;
+    margin-left: 0.60em !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+    font-size: 2.5em !important;
+}
+
+
+.containerNoticias {
+    height: auto;
+    background: white;
+    display: grid;
+    grid-template-columns: 100%;
+        grid-template-rows: 15% 15% 15% 15% 15% 15%;
+        grid-template-areas: "notPrin"
+                             "noticia1"
+                             "noticia2"
+                             "noticia3"
+                             "noticia4"
+                             "noticia5"; 
+        justify-content: space-between;
+    margin: 5%;   
+    
+    .noticiaPrincipal {
+        font-size: 16px;
+        height: auto;
+        grid-area: notPrin;
+        border-radius: 6px;
+        margin-top: 1em;
+        overflow: hidden;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+        
+        img {
+            height: 60%;
+            width: 100%;    
+        }
+        h2 {
+            @include h2cardPrin (1.1em , 0.2em , 0.25em );
+            font-family: 'Abril Fatface', cursive;
+         }
+         p {
+            font-size: 0.9em;
+            margin: 0.25em;
+        }
+    }
+    .carta {
+        font-size: 16px;
+        height: auto;
+        border-radius: 6px;
+        margin-top: 1em;
+        overflow: hidden;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+
+        .carta__img{
+            height: 60%;
+            width: 100%;
+        }
+        .carta__titulo {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 1.1em;
+            padding-top: 0.2em;
+            margin: 0.25em;
+         }
+         .carta__parrafo{
+            font-size: 0.9em;
+            margin: 0.25em;
+         }
+    }
+    .noticias1{
+        grid-area: noticia1;
+    }
+    .noticias2{
+        grid-area: noticia2;
+    }
+    .noticias3{
+        grid-area: noticia3;
+    }
+    .noticias4{
+        grid-area: noticia4;
+    }
+    .noticias5{
+        grid-area: noticia5;
+    }
+}
+@media only screen and (min-width: 700px) {
+
+    .containerNoticias {
+        height: auto;
+        background: white;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 22% 25% 25% 25%;
+        grid-template-areas: "notPrin notPrin"
+                             "noticia1 noticia2"
+                             "noticia3 noticia4"
+                             "noticia5 noticia5";                    
+        justify-content: space-between;
+        margin: 15px;
+        margin-bottom: 3%;
+
+        .noticiaPrincipal {
+
+            font-size: 16px;
+            height: auto;
+            grid-area: notPrin;
+            border-radius: 6px;
+            margin-top: 1em;
+            overflow: hidden;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+
+            img {
+                height: 70%;
+                width: 100%;     
+            }
+            h2 {
+                @include h2cardPrin( 1.6em , 0.4em  , 0.25em );
+                font-family: 'Abril Fatface', cursive;
+                
+             }
+             p {
+                font-size: 1.2em;
+                padding-top: 0.2em;
+                margin: 0.25em;
+            }
+        }
+        .carta {
+            font-size: 16px;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 1em;
+            overflow: hidden;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+    
+            .carta__img{
+                height: 70%;
+                width: 100%;
+            }
+            .carta__titulo {
+                font-family: 'Abril Fatface', cursive;
+                font-size: 1.1em;
+                padding-top: 0.2em;
+                margin: 0.25em;
+             }
+             .carta__parrafo{
+                font-size: 1em;
+                padding-top: 0.2em;
+                margin: 0.25em;
+             }
+        }
+        .noticias1{
+            grid-area: noticia1;
+        }
+        .noticias2{
+            grid-area: noticia2;
+        }
+        .noticias3{
+            grid-area: noticia3;
+        }
+        .noticias4{
+            grid-area: noticia4;
+        }
+        .noticias5{
+            grid-area: noticia5;
+        }
+
+
+}
+}
+
+@media only screen and (min-width: 1200px){
+
+    .containerNoticias {
+        height: auto;
+        background: white;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 37%;
+        grid-template-areas: "notPrin notPrin noticia1"
+                              " notPrin notPrin noticia2"
+                              " noticia3 noticia4 noticia5"; 
+        justify-content: space-between;
+        margin: 15px;
+        margin-bottom: 3%;   
+                      
+    
+        .noticiaPrincipal {
+
+            font-size: 16px;
+            height: auto;
+            grid-area: notPrin;
+            border-radius: 6px;
+            margin-top: 1em;
+            overflow: hidden;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+
+            img {
+                height: 80%;
+                width: 100%;     
+            }
+            h2 {
+                @include h2cardPrin( 1.8em , 0.4em , 0.25em );
+                font-weight: bold;
+                font-family: 'Abril Fatface', cursive;
+             }
+             p {
+                font-size: 1.3em;
+                padding-top: 0.2em;
+                margin: 0.25em;
+            }
+        }
+
+        .carta {
+
+            font-size: 16px;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 1em;
+            overflow: hidden;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+
+            .carta__img{
+                height: 60%;
+                width: 100%;
+            }
+            .carta__titulo {
+                font-family: 'Abril Fatface', cursive;
+                font-size: 1.1em;
+                padding-top: 0.05em;
+                margin: 0.25em;
+             }
+             .carta__parrafo{
+                font-size: 1em;
+                margin: 0.25em;
+                margin-top: 0.02em;
+                margin-bottom: 0.02em;
+             }
+        }
+        .noticias1{
+            grid-area: noticia1;
+        }
+        .noticias2{
+            grid-area: noticia2;
+        }
+        .noticias3{
+            grid-area: noticia3;
+        }
+        .noticias4{
+            grid-area: noticia4;
+        }
+        .noticias5{
+            grid-area: noticia5;
+        }
+
+        }
+}
+
+
+
+
+
+
+
+
+
+
