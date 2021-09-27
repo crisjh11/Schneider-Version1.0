@@ -169,6 +169,9 @@ h1 {
   text-decoration: none;
   font-weight: bold; }
 
+.container {
+  margin-top: 3em; }
+
 .col-md-7 {
   margin: 0 auto;
   margin-top: 20em; }
@@ -373,14 +376,8 @@ a {
   .pricingTable {
     margin-bottom: 30px; } }
 
-.container {
-  margin-top: 80px;
-  margin-bottom: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-  .container .col-md-3 {
-    margin-left: 50px; }
+.planes {
+  margin-top: 3em !important; }
 
 .largoPromo {
   height: auto; }
