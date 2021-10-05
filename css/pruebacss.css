@@ -26,7 +26,7 @@ hr {
   height: 1px !important; }
 
 .my-5 {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0rem !important; }
 
 .fondoFix {
   background: #424244;
@@ -51,7 +51,8 @@ hr {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 5%;
-  margin-top: 3%; }
+  margin-top: 3%;
+  width: 80%; }
   #tablaFixture tr td {
     padding: 15px;
     border: solid;
@@ -83,7 +84,17 @@ hr {
     grid-template-columns: 90%;
     grid-template-rows: 60% 40%;
     align-items: center;
-    justify-content: space-between; } }
+    justify-content: space-around;
+    margin-top: 15%; } }
+
+@media only screen and (max-width: 500px) {
+  #tablaFixture tr td {
+    padding: 8px;
+    border: solid;
+    border-color: #727481;
+    border: 1px;
+    font-weight: bold;
+    font-size: 15px; } }
 
 #tablaPosiciones {
   margin: 0 auto;
@@ -114,7 +125,7 @@ hr {
     font-size: 4em;
     font-weight: bold; }
 
-#galeriaFotos, #galeriaVideos {
+#galeriaFotos {
   width: 90%;
   margin: auto;
   list-style: none;
@@ -122,17 +133,32 @@ hr {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap; }
-  #galeriaFotos .galeriaFotos__lista, #galeriaVideos .galeriaFotos__lista {
-    margin: 5px; }
-    #galeriaFotos .galeriaFotos__lista .galeriaFotos_img, #galeriaVideos .galeriaFotos__lista .galeriaFotos_img {
+  #galeriaFotos .galeriaFotos__lista {
+    margin: 0 auto;
+    margin-top: 10px; }
+    #galeriaFotos .galeriaFotos__lista .galeriaFotos_img {
       width: 400px;
       height: 250px; }
-    #galeriaFotos .galeriaFotos__lista :hover, #galeriaVideos .galeriaFotos__lista :hover {
+    #galeriaFotos .galeriaFotos__lista :hover {
       transform: scale(1.08);
       transition: all 500ms; }
 
-#galeriaVideos li {
-  margin: 5px; }
+#galeriaVideos {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; }
+  #galeriaVideos li {
+    margin: 0 auto;
+    margin-top: 10px; }
+
+@media only screen and (max-width: 700px) {
+  iframe {
+    width: 450px;
+    height: 300px; } }
 
 .navbar a {
   font-weight: bold;
@@ -174,7 +200,7 @@ h1 {
 
 .col-md-7 {
   margin: 0 auto;
-  margin-top: 20em; }
+  margin-top: 5em; }
 
 .contact-img {
   text-align: center; }

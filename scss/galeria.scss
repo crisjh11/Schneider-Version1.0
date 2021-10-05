@@ -24,7 +24,8 @@
     flex-wrap: wrap;
 
     .galeriaFotos__lista{
-        margin: 5px;
+        margin: 0 auto;
+        margin-top: 10px;
 
         .galeriaFotos_img {
             width: 400px;
@@ -40,9 +41,25 @@
 
 #galeriaVideos {
    
-    @extend #galeriaFotos;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 
     li{
-        margin: 5px;
+        margin: 0 auto;
+        margin-top: 10px;
     }
+}
+
+@media only screen and (max-width: 700px) {
+
+   iframe {
+       width: 450px;
+       height: 300px;
+   }
+
 }
