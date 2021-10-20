@@ -1,11 +1,11 @@
 
 h1 {
-    font-family: 'Fredoka One', cursive;
+    
     margin-top: 0.75em !important;
     margin-left: 0.60em !important;
     font-weight: bold !important;
-    text-decoration: underline;
-    font-size: 2.5em !important;
+    font-size: 3.2em;
+    font-family: 'Roboto Slab', serif;
 }
 
 
@@ -16,6 +16,8 @@ h1 {
     margin-bottom: 30px;
     float: left;
     border-radius: 10px;
+    height: 92%;
+    
 }
 .card-box .card-thumbnail {
     max-height: 200px;

@@ -34,10 +34,10 @@ hr {
 
 #tituloFix {
   margin: 15px;
-  font-family: 'Fredoka One', cursive;
-  text-decoration: underline;
-  color: #e2e616d8;
-  font-weight: bold; }
+  font-family: 'Roboto Slab', serif;
+  color: #020202f6;
+  font-weight: bold;
+  font-size: 3em; }
 
 #container {
   display: grid;
@@ -117,48 +117,29 @@ hr {
   background: #424244;
   background: linear-gradient(144deg, #424244 0%, #9fa0a1 50%, #e1e1e2 96%); }
   .fondoGal h1 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Roboto Slab', serif;
     margin-top: 25px;
-    text-decoration: underline;
-    color: #e2e616d8;
+    color: #020202f6;
     text-align: center;
     font-size: 4em;
     font-weight: bold; }
 
 #galeriaFotos {
-  width: 90%;
-  margin: auto;
-  list-style: none;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap; }
-  #galeriaFotos .galeriaFotos__lista {
-    margin: 0 auto;
-    margin-top: 10px; }
-    #galeriaFotos .galeriaFotos__lista .galeriaFotos_img {
-      width: 400px;
-      height: 250px; }
-    #galeriaFotos .galeriaFotos__lista :hover {
-      transform: scale(1.08);
-      transition: all 500ms; }
+  margin: 0 auto !important; }
+  #galeriaFotos img:hover {
+    transform: scale(1.2);
+    transition: 1.2s; }
+  #galeriaFotos img {
+    width: 100%;
+    height: 20em;
+    padding: 10px; }
 
 #galeriaVideos {
-  width: 90%;
-  margin: auto;
-  list-style: none;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap; }
-  #galeriaVideos li {
-    margin: 0 auto;
-    margin-top: 10px; }
-
-@media only screen and (max-width: 700px) {
-  iframe {
-    width: 450px;
-    height: 300px; } }
+  margin: 0 auto !important; }
+  #galeriaVideos iframe {
+    width: 100%;
+    height: 20em;
+    padding: 10px; }
 
 .navbar a {
   font-weight: bold;
@@ -170,12 +151,11 @@ hr {
   margin-left: -6em; }
 
 h1 {
-  font-family: 'Fredoka One', cursive;
   margin-top: 0.75em !important;
   margin-left: 0.60em !important;
   font-weight: bold !important;
-  text-decoration: underline;
-  font-size: 2.5em !important; }
+  font-size: 3.2em;
+  font-family: 'Roboto Slab', serif; }
 
 .card-box {
   border: 1px solid #ddd;
@@ -183,7 +163,8 @@ h1 {
   box-shadow: 0px 0px 10px 0px #c5c5c5;
   margin-bottom: 30px;
   float: left;
-  border-radius: 10px; }
+  border-radius: 10px;
+  height: 92%; }
 
 .card-box .card-thumbnail {
   max-height: 200px;
@@ -218,8 +199,9 @@ h1 {
   background-color: #e0df9e !important; }
 
 .tituloPlan {
-  font-size: 3.2em !important;
-  color: #e2e616d8; }
+  font-size: 4em !important;
+  color: #020202f6;
+  text-align: center; }
 
 .largoPromo {
   background: #424244;
